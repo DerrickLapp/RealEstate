@@ -1,0 +1,47 @@
+/*global*/
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:arial;
+}   
+img{
+    max-width: 100%;
+}
+p{
+    line-height: 2;
+}
+
+/*utilities*/
+
+
+/*header*/
+
+.site-header{
+    background-image: url(img/header.jpg);
+    background-position: top center;
+    background-size: cover;
+    color: white;
+    height: 300px;
+    text-align: center;
+}
+.site-header a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.menu{
+    color: white;
+    text-decoration: none;
+
+}
