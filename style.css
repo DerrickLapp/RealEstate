@@ -36,6 +36,7 @@ a{
     color: white;
     text-decoration: none;
     font-size: 1.6rem;
+    padding: 1rem;
 }
 /*utilities*/
 
@@ -64,6 +65,18 @@ a{
 
 .menu{
     color: white;
+    text-decoration: none;
+
+}
+
+.contact-header{
+    background-color: orange;
+    color: black;
+    height: 30vh;
+    
+}
+.contact-menu a{
+    color: black;
     text-decoration: none;
 
 }
@@ -113,4 +126,74 @@ li{
 .house-icons{
     display: flex;
     justify-content: space-evenly;
+}
+.contact-forms{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+/* Forms */
+.form-container{
+    justify-content: center;
+    background-color: lightgray;
+    padding: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+.form-style{
+    padding: 2rem;
+    border-radius: 15px;
+    justify-content: space-around;
+    font-size: 16px;
+    width: 80%;
+
+}
+.input-style{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+label{
+    justify-content: left;
+}
+input, select, textarea{
+    justify-content: center;
+    width: 50%;
+}
+
+
+
+/* footer */
+.contact-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: lightgrey;
+    background-position: 100%;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-footer a{
+    color: black;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.logos{
+    display: flex;
+    margin-right: 8%;
+    width: 10%;
+    align-items: center;
+}
+
+.logos img{
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
 }
