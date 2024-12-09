@@ -45,6 +45,11 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+@media(max-width: 768px) {
+    .container{
+        width: 95%;
+    }
+}
 
 /*header*/
 
@@ -55,18 +60,36 @@ a{
     color: white;
     height: 40vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.site-header p{
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    font-size: 45px;
+    width: 50%;   
+    padding-left: 10%;
 }
 
 .menu-bar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+@media(max-width: 768px) {
+    .menu-bar{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 .menu{
     color: white;
     text-decoration: none;
-
+    margin-left: auto;
 }
 
 .contact-header{
@@ -86,30 +109,41 @@ a{
     display: flex;
     flex-direction: row;
 }
+@media(max-width: 768px) {
+    .about-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    h2, h3{
+        text-align: center;
+    }
+    .about-flex img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /*Houses*/
 .HandP{
     display: flex;
     flex-direction: row;
     margin-bottom: 3rem;
 }
-
+@media(max-width: 768px){
+    .HandP{
+        display: flex;
+        flex-direction: column;
+    }
+}
 .houses-item{
     background-color: #dedede;
     border: 1px solid gray;
     margin-right: 3rem;
 }
-.houses-item-img{
-    
+.houses-items-img{
 }
 .houses-item-text{
     padding: 2rem;
-}
-
-.btn-details{
-    display: block;
-    background-color: orange;
-    padding: 5px;
-    text-align: center;
 }
 .house-price{
     color: green;
@@ -117,15 +151,15 @@ a{
 li{
     list-style: none;
 }
+.house-icons{
+    display: flex;
+    justify-content: space-around;
+}
 .house-details{
     display: flex;
 }
 .house-details img{
     margin-right: 1rem;
-}
-.house-icons{
-    display: flex;
-    justify-content: space-evenly;
 }
 .contact-forms{
     margin-left: auto;
@@ -134,12 +168,18 @@ li{
     text-align: center;
     width: 50%;
 }
+.btn-details{
+    display: block;
+    background-color: orange;
+    padding: 5px;
+    text-align: center;
+}
 /* Forms */
 .form-container{
     justify-content: center;
     background-color: lightgray;
     padding: 2rem;
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
@@ -165,10 +205,89 @@ input, select, textarea{
     justify-content: center;
     width: 50%;
 }
+/* About Page */
+.members{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+@media(max-width: 768px){
+    .members{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+}
 
+/* Blog Page */
+.sold  {
+    display: flex;
+    flex-direction: row;
+}
+.sold-numbers h3{
+    text-align: start;
+    height: 3rem;
+    background-color: orange;
+}
+.sold img{
+    margin-bottom: -8%;
+}
+.sales-container{
+    width: 80%;
+}
+.blogs-container{
+    display: flex;
+    background-color: lightgray;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.blogs a{
+    color: black;
+    background-color: orange;
+}
+@media(max-width: 768px){
+    .mobile-blogs{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .sold{
+        flex-direction: column;
+    }
+    .sales-container{
+        flex-direction: column;
+    }
+    .mobile-BP{
+        flex-direction: column;
+    }
+    .blogs-container{
+        flex-direction: column;
+    }
 
+}
 
 /* footer */
+.index-footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    height: 20vh;
+}
+.index-footer h1,.index-footer p,.index-footer button{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1;
+}
+.index-footer button{
+    background-color: orange;
+    height: 30px;
+}
 .contact-footer{
     display: flex;
     justify-content: space-around;
@@ -179,6 +298,7 @@ input, select, textarea{
     margin-bottom: 0rem;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 .contact-footer a{
     color: black;
@@ -187,13 +307,8 @@ input, select, textarea{
 }
 .logos{
     display: flex;
-    margin-right: 8%;
-    width: 10%;
-    align-items: center;
+    size: 1000%;
 }
-
-.logos img{
-    justify-content: space-around;
-    align-items: center;
-    max-width: 50%;
+.fa-brands{
+    font-size: 72px;
 }
